@@ -1,5 +1,5 @@
 FROM java:8
-ARG JAR_FILE=target/*.jar
+ARG JAR_FILE=target/*0.1.jar
 COPY ${JAR_FILE} app.jar
 EXPOSE 8761
-ENTRYPOINT ["java","-jar","/app.jar"]
+CMD ["java","-jar","/app.jar"]
